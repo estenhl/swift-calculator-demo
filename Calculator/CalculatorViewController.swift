@@ -95,5 +95,14 @@ class CalculatorViewController: UIViewController {
             }
         }
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        print("Doing segue")
+        let destination = segue.destinationViewController
+        if let graphViewController = destination as? GraphViewController {
+            graphViewController.setExpression(brain.internalProgram)
+        }
+        print("Identifier: \(segue.identifier)")
+    }
 }
 

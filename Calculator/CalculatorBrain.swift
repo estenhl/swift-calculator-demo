@@ -18,7 +18,7 @@ enum CalculatorOperation {
 class CalculatorBrain {
     private var accumulator = 0.0
     private var pending: PendingBinaryOperationInfo?
-    private var internalProgram = [AnyObject]()
+    var internalProgram = [AnyObject]()
     
     var result: Double {
         return accumulator

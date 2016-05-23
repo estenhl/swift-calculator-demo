@@ -292,6 +292,7 @@
                                                 <state key="normal" title="="/>
                                                 <connections>
                                                     <action selector="performAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MvF-ZB-k2U"/>
+                                                    <segue destination="96N-xr-uLx" kind="showDetail" identifier="display graph" id="sYp-tr-2sy"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -330,10 +331,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="graphView" destination="vuT-VR-EbM" id="S4T-7x-0B0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88B-IM-ArK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1740" y="308"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sYp-tr-2sy"/>
+    </inferredMetricsTieBreakers>
 </document>
